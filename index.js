@@ -23,7 +23,7 @@ function getCart(){
 function addToCart(item){
   var price = Math.floor(Math.random() * 100);
   var itemsObj = new Object();
-  itemsObj = {'itemName': item, 'itemPrice': price};
+  itemsObj = {'item': price};
   cart.push(itemsObj);
   console.log(`${item} has been added to your cart.`);
   return getCart();
