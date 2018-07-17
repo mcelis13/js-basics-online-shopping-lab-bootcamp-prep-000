@@ -47,7 +47,6 @@ function viewCart(){
   console.log(string);
 };
 
-console.log(viewCart());
 
 //function removeFromCart(item){
 //cart is not an object// it is an array with lots of object.
