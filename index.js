@@ -38,9 +38,9 @@ function viewCart(){
 
   for(var i = 0; i < cart.length; i++){
     if(i < cart.length -1){
-      string += `you have ${cart[i]['itemName']} $${cart[i]['itemPrice']}, `;
+      string += `you have ${cart[i]['itemName']} at $${cart[i]['itemPrice']}, `;
     }else{
-      string += `you have ${cart[i]['itemName']} $${cart[i]['itemPrice']}.`;
+      string += `and you have ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`;
     }
   }
 
