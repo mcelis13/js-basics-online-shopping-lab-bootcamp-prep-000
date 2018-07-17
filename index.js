@@ -23,7 +23,7 @@ function getCart(){
 function addToCart(item){
   var price = Math.floor(Math.random() * 100);
   var itemsObj = new Object();
-  itemsObj = {item: price};
+  itemsObj = {'itemName': item, 'itemPrice': price};
   cart.push(itemsObj);
   console.log(`${item} has been added to your cart.`);
   return getCart();
@@ -38,7 +38,7 @@ function viewCart(){
 
   for(var i = 0; i < cart.length; i++){
     if(i < cart.length -1){
-      string += `you have ${Object.keys(cart[i])[0]} at $${cart[i][Object.keys(cart[i])[0]]}, `;
+      string += `you have ${cart[i]['itemName']} at $${cart[i]['itemPrice']}, `;
     }else{
       string += `and you have ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`;
     }
@@ -47,6 +47,7 @@ function viewCart(){
   console.log(string);
 };
 
+console.log(viewCart());
 
 //function removeFromCart(item){
 //cart is not an object// it is an array with lots of object.
