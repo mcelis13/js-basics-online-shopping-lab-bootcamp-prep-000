@@ -43,8 +43,7 @@ function viewCart(){
       string += `you have ${cart[i]['itemName']} $${cart[i]['itemPrice']}.`;
     }
   }
-
-  string = string.slice(0, -2) + '.';
+  
   console.log([string]);
 };
 
