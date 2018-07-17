@@ -37,14 +37,14 @@ function viewCart(){
   var string = 'In your cart, ';
 
   for(var i = 0; i < cart.length; i++){
-    if(cart.length > 1){
+    if(i < cart.length -1){
       string += `you have ${cart[i]['itemName']} $${cart[i]['itemPrice']}, `;
-    }else if(cart.length === 1){
+    }else{
       string += `you have ${cart[i]['itemName']} $${cart[i]['itemPrice']}.`;
     }
   }
   
-  console.log([string]);
+  console.log(string);
 };
 
 console.log(viewCart());
