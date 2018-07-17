@@ -36,17 +36,13 @@ function viewCart(){
 
   var string = 'In your cart, ';
 
-    cart.forEach(function(obj){
-        for(let key in obj){
-          var [item, price] = Object.keys(obj);
-        }
-
-        if(cart.length > 1){
-          string += `you have ${obj[item]} $${obj[price]}, `;
-        }else if(cart.length === 1){
-          string += `you have ${obj[item]} $${obj[price]}.`;
-        }
-    });
+  for(var i = 0; i < cart.length; i++){
+    if(cart.length > 1){
+      string += `you have ${cart[i]['itemName']} $${cart[i]['itemPrice']}, `;
+    }else if(cart.length === 1){
+      string += `you have ${cart[i]['itemName']} $${cart[i]['itemPrice']}.`;
+    }
+  }
 
   string = string.slice(0, -2) + '.';
   console.log([string]);
