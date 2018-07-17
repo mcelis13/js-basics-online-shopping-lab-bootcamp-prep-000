@@ -49,7 +49,7 @@ function viewCart(){
         if(cart.length > 1){
           string += `you have ${obj[item]} ${obj[price]}, `;
         }else if(cart.length === 1){
-          string += `you have ${obj[item]} ${obj[price]}.`;
+          string += `you have ${obj[item]} $${obj[price]}.`;
         }
     });
 
