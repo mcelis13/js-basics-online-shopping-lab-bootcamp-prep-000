@@ -43,8 +43,8 @@ function viewCart(){
       string += `you have ${cart[i]['itemName']} $${cart[i]['itemPrice']}.`;
     }
   }
-  
-  console.log(string);
+
+  return string;
 };
 
 console.log(viewCart());
