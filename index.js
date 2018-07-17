@@ -29,15 +29,10 @@ function addToCart(item){
   return getCart();
 };
 
-addToCart('strawberry');
-addToCart('napoleon');
-addToCart('pizza');
-
-
 function viewCart(){
   if(cart.length === 0){
     console.log('Your shopping cart is empty.');
-  }
+};
 
   var string = 'In your cart, ';
 
